@@ -1,68 +1,31 @@
 # Awesome IFC Tools
-A curated list of compiled command line tools for IFC manipulation, validation, and conversion.  
-Only standalone executables are included. No libraries, no API only packages, no GUI only tools.
+A curated list of compiled command line tools for IFC manipulation, conversion, geometry extraction, validation, and automation.  
+Only standalone CLI executables are included. No libraries and no GUI only tools.
 
-## Tools
+## Conversion
+[IfcConvert](https://github.com/IfcOpenShell/IfcOpenShell) - converts IFC to OBJ, DAE, GLB, SVG and performs triangulation  
+[Ifc2Gltf](https://github.com/kebakcz/IfcGltf) - converts IFC to glTF or GLB using a Rust based pipeline  
+[FreeCAD headless](https://github.com/FreeCAD/FreeCAD) - imports and exports IFC using the `freecadcmd` executable
 
-## IfcConvert
-Compiled IFC to mesh and format converter  
-Supports OBJ, DAE, GLB, SVG, various triangulation options  
-Source: https://github.com/IfcOpenShell/IfcOpenShell  
-Binary: distributed in releases  
-CLI: `ifcconvert`
+## Geometry
+[IfcConvert](https://github.com/IfcOpenShell/IfcOpenShell) - extracts triangulated geometry and optimized meshes  
+[IfcGeomServer](https://github.com/tomvandig/ifcgeomserver) - headless geometry server with CLI entry for mesh generation
 
-## IfcClash
-Clash detection using compiled IFCOpenShell routines  
-Source: https://github.com/IfcOpenShell/IfcOpenShell/tree/master/src/ifcclash  
-Binary: included in releases  
-CLI: `ifcclash`
+## Validation and QA
+[IfcCheck](https://github.com/lutraconsulting/ifccheck) - fast C++ IFC rule validator for QA checking
 
-## IfcPatch
-Binary tool for patching and editing IFC files  
-Useful for batch corrections  
-Source: https://github.com/IfcOpenShell/IfcOpenShell/tree/master/src/ifcpatch  
-Binary: included in releases  
-CLI: `ifcpatch`
+## Diff and Change Tracking
+[IfcDiff](https://github.com/IfcOpenShell/IfcOpenShell/tree/master/ifcdiff) - compares two IFC files and reports changes
 
-## IfcDiff
-Compiled tool to detect changes between IFC revisions  
-Source: https://github.com/IfcOpenShell/IfcOpenShell/tree/master/ifcdiff  
-Binary: included in releases  
-CLI: `ifcdiff`
+## Patching and Editing
+[IfcPatch](https://github.com/IfcOpenShell/IfcOpenShell/tree/master/src/ifcpatch) - applies batch edits and targeted corrections to IFC models
 
-## Ifc2Gltf
-Standalone IFC to glTF converter  
-Source: https://github.com/kebakcz/IfcGltf  
-Binary: compiled Rust executable  
-CLI: `ifc2gltf`
+## Servers and Automation
+[IfcGeomServer](https://github.com/tomvandig/ifcgeomserver) - lightweight headless geometry processing daemon  
+[xBIM tools](https://github.com/xBimTeam) - compiled dotnet executables for property extraction and batch workflows
 
-## IfcCheck
-Fast checker for IFC rule violations  
-Compiled C++ executable  
-Source: https://github.com/lutraconsulting/ifccheck  
-CLI: `ifccheck`
-
-## IfcPlusPlus CLI utilities
-C++ based IFC parser project with compiled example tools  
-Source: https://github.com/ifcquery/ifcplusplus  
-CLI: various sample binaries included in build output
-
-## IfcGeomServer CLI
-Simplified geometry processing server with CLI interface  
-Source: https://github.com/tomvandig/ifcgeomserver  
-Binary: distributed per platform  
-CLI: `ifcgeomserver`
-
-## xbim Essentials Command Tools
-Some xBIM components ship compiled dotnet executables  
-Source: https://github.com/xBimTeam  
-Binary: check xbim.tools releases  
-CLI: varies by tool
-
-## FreeCAD ifc cli mode
-FreeCAD supports headless IFC import and export  
-Source: https://github.com/FreeCAD/FreeCAD  
-CLI: `freecadcmd`
+## Misc
+[IfcPlusPlus tools](https://github.com/ifcquery/ifcplusplus) - C++ IFC parser with compiled example utilities for testing
 
 ## Contributing
 See CONTRIBUTING.md
