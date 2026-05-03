@@ -3,52 +3,72 @@
 Thank you for contributing to Awesome IFC Tools.
 
 ## Scope
-Only compiled standalone CLI executables are accepted.  
-Tools must  
-* Manipulate, convert, validate, or inspect IFC files  
-* Provide a direct terminal entry point  
-* Build as a binary  
-* Be open source
 
-Tools implemented only as libraries, scripts, plugins, or GUIs without CLI are not accepted.
+Tools must:
 
-## How to contribute
+- Be open source with a public repository.
+- Work directly with IFC or closely related openBIM workflows.
+- Read, write, inspect, validate, convert, visualize, edit, or automate IFC data.
+- Include a clear project page, repository, or documentation link.
 
-## 1. Fork and clone
+Libraries, command-line tools, viewers, web apps, desktop apps, plugins, and server components are all in scope when they are useful for IFC workflows.
+
+## Out of Scope
+
+- Closed-source or source-available-only tools.
+- Commercial services without usable public source code.
+- Generic CAD, GIS, or 3D tools with no meaningful IFC support.
+- Abandoned examples that cannot be built or used without substantial repair.
+
+## How to Contribute
+
+### 1. Fork and Clone
+
 Create a fork and clone it locally.
 
-## 2. Create a branch
+### 2. Create a Branch
+
 Use a clear branch name.
 
-## 3. Add or edit entries
-Each entry must include  
-* Name  
-* One or two line description  
-* Repository link  
-* Binary or release link  
-* CLI command name
+### 3. Add or Edit Entries
 
-Keep descriptions short.
+Each entry must include:
 
-## 4. Verify the tool
-Make sure the tool compiles to a real executable and works headless.
+- Name.
+- Clickable repository, documentation, or project link.
+- One short description.
+- Relevant category.
 
-## 5. Push and submit a PR
-Provide a short and technical summary.
+Keep descriptions factual and concise.
 
-## Style rules
-* No long sentences  
-* No opinions  
-* No marketing text  
-* Preserve concise formatting  
-* Use correct IFC terminology
+### 4. Verify the Tool
+
+Make sure the project is open source and has a real IFC-related use case. Prefer active projects with usable documentation, releases, examples, or build instructions.
+
+### 5. Push and Submit a PR
+
+Provide a short technical summary of what changed.
+
+## Style Rules
+
+- Use Markdown bullets in the format `[Name](https://example.com) - Description.`
+- Keep entries alphabetized only when it improves scanning inside a category.
+- Avoid marketing language.
+- Avoid long descriptions.
+- Use correct IFC, IDS, BCF, bSDD, and openBIM terminology.
+- Do not add duplicates unless the projects serve different roles.
 
 ## Issues
-Open an issue for  
-* Outdated binaries  
-* New categories  
-* Broken links  
-* Removal of unmaintained tools
+
+Open an issue for:
+
+- New tools.
+- Broken links.
+- Outdated descriptions.
+- License or source-code concerns.
+- New categories.
+- Removal of unmaintained tools.
 
 ## License
+
 Contributions fall under the repository license.
