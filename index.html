@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awesome IFC Tools</title>
+  <meta name="description" content="A curated list of open-source IFC tools, libraries, viewers, validators, and automation utilities.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #1f2933;
+      --muted: #5d6875;
+      --line: #d9e0e8;
+      --accent: #0f766e;
+      --accent-dark: #0b5e58;
+      --chip: #e6f3f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover {
+      color: #063f3b;
+    }
+
+    header {
+      background: #12343b;
+      color: #ffffff;
+      padding: 56px 20px 42px;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.1rem, 4vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    header p {
+      max-width: 780px;
+      margin: 0;
+      color: #d6e4e3;
+      font-size: 1.08rem;
+    }
+
+    nav {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 0;
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      color: var(--accent-dark);
+      background: var(--chip);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 650;
+    }
+
+    main {
+      padding: 32px 0 60px;
+    }
+
+    section {
+      margin-top: 34px;
+    }
+
+    section:first-child {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.55rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .tool {
+      min-height: 156px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .tool h3 {
+      margin: 0 0 8px;
+      font-size: 1.02rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    .tool p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--muted);
+      padding: 24px 0;
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 620px) {
+      header {
+        padding-top: 40px;
+      }
+
+      .wrap {
+        width: min(100% - 28px, 1120px);
+      }
+
+      nav {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Awesome IFC Tools</h1>
+      <p>A curated list of open-source tools, libraries, viewers, validators, and automation utilities for Industry Foundation Classes workflows.</p>
+    </div>
+  </header>
+
+  <nav aria-label="Sections">
+    <div class="wrap">
+      <a href="#authoring">Authoring</a>
+      <a href="#libraries">Libraries</a>
+      <a href="#conversion">Conversion</a>
+      <a href="#viewing">Viewing</a>
+      <a href="#validation">Validation</a>
+      <a href="#servers">Servers</a>
+      <a href="#data">Data Utilities</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="authoring">
+      <h2>Authoring and Editing</h2>
+      <div class="grid">
+        <article class="tool"><h3><a href="https://bonsaibim.org/">Bonsai</a></h3><p>Native IFC authoring platform built as a Blender add-on for modeling, drawings, schedules, costs, audits, and BIM data editing.</p></article>
+        <article class="tool"><h3><a href="https://github.com/FreeCAD/FreeCAD">FreeCAD</a></h3><p>Open-source parametric CAD and BIM application with IFC import, export, Python automation, and architecture-oriented workflows.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifcpatch.html">IfcPatch</a></h3><p>IfcOpenShell utility for applying batch fixes and model transformations to IFC files.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifccsv.html">IfcCSV</a></h3><p>Exports IFC data to spreadsheets and imports edited tabular data back into IFC models.</p></article>
+        <article class="tool"><h3><a href="https://pypi.org/project/compas-ifc/">COMPAS IFC</a></h3><p>High-level Python interface for inspecting, editing, extracting geometry from, and creating IFC data.</p></article>
+      </div>
+    </section>
+
+    <section id="libraries">
+      <h2>Libraries and SDKs</h2>
+      <div class="grid">
+        <article class="tool"><h3><a href="https://github.com/IfcOpenShell/IfcOpenShell">IfcOpenShell</a></h3><p>Open-source IFC library and geometry engine with C++ and Python APIs, schema support, and command-line tools.</p></article>
+        <article class="tool"><h3><a href="https://github.com/xBimTeam/XbimEssentials">xBIM Essentials</a></h3><p>.NET toolkit for reading, writing, validating, and querying IFC and COBie data.</p></article>
+        <article class="tool"><h3><a href="https://github.com/ThatOpen/engine_web-ifc">web-ifc</a></h3><p>JavaScript and WebAssembly IFC parser for reading and writing IFC files in browsers and Node.js.</p></article>
+        <article class="tool"><h3><a href="https://github.com/ThatOpen/engine_components">That Open Components</a></h3><p>TypeScript components for browser-based BIM apps with Three.js, measurements, sections, and IFC workflows.</p></article>
+        <article class="tool"><h3><a href="https://github.com/ifcquery/ifcplusplus">IfcPlusPlus</a></h3><p>C++ IFC class model, STEP reader and writer, and sample Qt/OpenSceneGraph viewer.</p></article>
+        <article class="tool"><h3><a href="https://github.com/xBimTeam/XbimGeometry">XbimGeometry</a></h3><p>Geometry engine used to compute and process IFC model geometry in .NET applications.</p></article>
+      </div>
+    </section>
+
+    <section id="conversion">
+      <h2>Conversion and Geometry</h2>
+      <div class="grid">
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifcconvert.html">IfcConvert</a></h3><p>Command-line converter from IFC to OBJ, DAE, GLB, SVG, STEP, IGES, XML, HDF5, and JSON variants.</p></article>
+        <article class="tool"><h3><a href="https://github.com/xeokit/xeokit-convert">xeokit-convert</a></h3><p>Node.js CLI and library for converting AEC formats into xeokit's compact XKT format.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifccityjson.html">IfcCityJSON</a></h3><p>IfcOpenShell utility for CityJSON and IFC interoperability in geospatial and city-model workflows.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifc2ca.html">Ifc2CA</a></h3><p>Converts IFC structural analysis models to Code_Aster input files.</p></article>
+        <article class="tool"><h3><a href="https://github.com/geoblocks/ifc-gltf">IFC-glTF</a></h3><p>Client-side TypeScript library that converts IFC files to glTF with web-ifc and Three.js.</p></article>
+        <article class="tool"><h3><a href="https://github.com/CubiCasa/IFCConverter">IFCConverter</a></h3><p>Command-line converter that uses IfcOpenShell libraries to export IFC geometry to OBJ and STL.</p></article>
+      </div>
+    </section>
+
+    <section id="viewing">
+      <h2>Viewing and Web Apps</h2>
+      <div class="grid">
+        <article class="tool"><h3><a href="https://github.com/xeokit/xeokit-bim-viewer">xeokit-bim-viewer</a></h3><p>Browser-based 2D and 3D BIM viewer for IFC-derived models, BCF viewpoints, trees, sections, and large model navigation.</p></article>
+        <article class="tool"><h3><a href="https://github.com/opensourceBIM/BIMsurfer">BIMsurfer</a></h3><p>Open-source WebGL viewer for IFC models in the browser.</p></article>
+        <article class="tool"><h3><a href="https://github.com/xBimTeam/XbimWindowsUI">XbimXplorer</a></h3><p>Windows WPF IFC viewer and desktop UI components built on the xBIM Toolkit.</p></article>
+        <article class="tool"><h3><a href="https://github.com/xBimTeam/XbimWebUI">XbimWebUI</a></h3><p>TypeScript and JavaScript web components for presenting BIM models with xBIM.</p></article>
+        <article class="tool"><h3><a href="https://github.com/ThatOpen/web-ifc-viewer">web-ifc-viewer</a></h3><p>Deprecated but useful reference implementation for IFC viewing tools built on web-ifc and Three.js.</p></article>
+        <article class="tool"><h3><a href="https://github.com/ifcquery/ifcplusplus">IfcPlusPlus Viewer</a></h3><p>Example IFC viewer application included with IfcPlusPlus, built with Qt and OpenSceneGraph.</p></article>
+      </div>
+    </section>
+
+    <section id="validation">
+      <h2>Validation and QA</h2>
+      <div class="grid">
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifctester.html">IfcTester</a></h3><p>IDS authoring and validation tool that audits IFC models and exports console, HTML, JSON, ODS, or BCF reports.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifcclash.html">IfcClash</a></h3><p>CLI and library for clash detection across one or more IFC models using JSON clash-set definitions.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifcdiff.html">IfcDiff</a></h3><p>Compares IFC models and reports differences in geometry, properties, and relationships.</p></article>
+        <article class="tool"><h3><a href="https://github.com/xBimTeam/Xbim.IDS.Validator">Xbim.IDS.Validator</a></h3><p>.NET library and console app for validating IFC and COBie models against IDS 1.0 specifications.</p></article>
+        <article class="tool"><h3><a href="https://github.com/buildingSMART/validate">buildingSMART Validate</a></h3><p>IFC validation service stack for syntax checks, schema checks, Gherkin rules, and related workflows.</p></article>
+        <article class="tool"><h3><a href="https://github.com/opensource-construction/model-checker">Model Checker</a></h3><p>Browser-based IFC and IDS validation application powered by Pyodide, IfcOpenShell, and IfcTester.</p></article>
+      </div>
+    </section>
+
+    <section id="servers">
+      <h2>Collaboration and Servers</h2>
+      <div class="grid">
+        <article class="tool"><h3><a href="https://github.com/opensourceBIM/BIMserver">BIMserver</a></h3><p>Open-source BIM server platform that stores IFC data as objects and supports checking, versioning, merging, and querying.</p></article>
+        <article class="tool"><h3><a href="https://github.com/opensourceBIM/BIMserver-JavaScript-API">BIMserver JavaScript API</a></h3><p>JavaScript client API for integrating web applications with BIMserver.</p></article>
+        <article class="tool"><h3><a href="https://github.com/aothms/python-bimserver-client">python-bimserver-client</a></h3><p>Python client for automating BIMserver workflows and accessing IFC model data.</p></article>
+      </div>
+    </section>
+
+    <section id="data">
+      <h2>Data, BCF, and IDS Utilities</h2>
+      <div class="grid">
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/bcf.html">BCF library</a></h3><p>IfcOpenShell package for reading and writing BCF-XML and interacting with BCF API workflows.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/bsdd.html">bSDD client</a></h3><p>IfcOpenShell package for querying the buildingSMART Data Dictionary API.</p></article>
+        <article class="tool"><h3><a href="https://github.com/BIM-Tools/bsdd-ids-validator">bsdd-ids-validator</a></h3><p>TypeScript library for validating ifcJSON data against bSDD and IDS-derived JSON schema rules.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifcfm.html">IfcFM</a></h3><p>Audits and converts IFC facility management data using COBie and FMH-EM workflows.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifc4d.html">Ifc4D</a></h3><p>Converts schedule and task data between IFC and project management formats.</p></article>
+        <article class="tool"><h3><a href="https://docs.ifcopenshell.org/ifc5d.html">Ifc5D</a></h3><p>Quantity takeoff and cost-estimation utility for IFC-based 5D workflows.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Open source only. See <a href="README.md">README.md</a> and <a href="Contributing.md">Contributing.md</a> for contribution guidelines.
+    </div>
+  </footer>
+</body>
+</html>
